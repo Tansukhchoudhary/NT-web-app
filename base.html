@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NT Photography</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<nav class="navbar">
+    <img src="{{ url_for('static', filename='logo.png') }}" height="90">
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/gallery">Gallery</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+</nav>
+
+{% block content %}{% endblock %}
+
+<footer>© 2026 NT Photography</footer>
+
+
+</body>
+</html>

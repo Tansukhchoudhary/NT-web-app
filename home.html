@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="panel">
+    <h1 class="parallax-text">NT PHOTOGRAPHY</h1>
+    <img src="{{ url_for('static', filename='images/gallery1.jpg') }}" class="parallax-img">
+</section>
+
+<section class="panel dark">
+    <h1 class="parallax-text">SHOT LIKE A FLAGSHIP</h1>
+    <img src="{{ url_for('static', filename='images/gallery2.jpg') }}" class="parallax-img">
+</section>
+
+<section class="panel">
+    <h1 class="parallax-text">PURE DETAIL</h1>
+    <img src="{{ url_for('static', filename='images/gallery3.jpg') }}" class="parallax-img">
+</section>
+
+<section class="panel dark">
+    <h1 class="parallax-text">SHOT BY NT PHOTOGRAPHY</h1>
+	<p class="parallax-text">Wedding • Portrait • Cinematic shoot • Drone • Pre-Wedding</p>
+	<h2>
+	
+	Turning Moments Into LOVE
+	</h2>
+	<a href="/contact" class="gradient-text-sm">
+	
+	BOOK A SHOOT NOW
+	</a>
+</section>
+
+{% endblock %}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+</head>
+<body style="padding:60px;">
+
+<h1>Upload Images</h1>
+
+<form method="POST" enctype="multipart/form-data">
+    <input type="file" name="image">
+    <button>Upload</button>
+</form>
+
+<hr>
+
+<h2>Uploaded Images</h2>
+{% for img in images %}
+    <img src="/static/images/{{ img }}" width="200">
+{% endfor %}
+
+<br><br>
+<a href="/logout">Logout</a>
+
+</body>
+</html>
